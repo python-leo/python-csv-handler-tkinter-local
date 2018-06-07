@@ -1,0 +1,103 @@
+# !/usr/bin/env python
+# -*- coding:utf-8 -*-
+
+import csv
+
+
+
+with open(r'C:\Users\linchao\.spyder\Normal-Cap-SNR\Results\D65-Cap_summary.csv', mode='r', newline='') as fdReadCSV:
+    reader = csv.reader(fdReadCSV)
+    rowSel = 0
+    resultStr = []
+
+    awb_err = []
+    SNR_result = []
+    exposure_err = []
+    noise_result = []
+    color_sat = []
+    color_delta_c_mean_corr = []
+    color_delta_c_max_corr = []
+    color_delta_c_min_uncorr = []
+    color_delta_c_max_uncorr = []
+    color_delta_e_min_uncorr = []
+    color_delta_e_max_uncorr = []
+
+
+    for row in reader:
+        if (rowSel >= 5 and rowSel <= 10):
+            print('Line %03d, colume %02d :  %s ' % (rowSel, 9, row[9]))
+            #resultStr.append(([row[9]]))
+            awb_err.append(row[9])
+
+        if (rowSel == 49):
+            print('Line %03d, colume %02d :  %s ' % (rowSel, 1, row[1]))
+            #resultStr.append(([row[9]]))
+            SNR_result.append(row[1])
+
+        if (rowSel == 133):
+            print('Line %03d, colume %02d :  %s ' % (rowSel, 1, row[1]))
+            #resultStr.append(([row[9]]))
+            exposure_err.append(row[1])
+
+        if (rowSel == 135):
+            print('Line %03d, colume %02d :  %s ' % (rowSel, 1, row[1]))
+            #resultStr.append(([row[9]]))
+            noise_result.append(row[1])
+            noise_result.append(row[2])
+            noise_result.append(row[3])
+            noise_result.append(row[4])
+
+        if (rowSel == 136):
+            print('Line %03d, colume %02d :  %s ' % (rowSel, 1, row[1]))
+            #resultStr.append(([row[9]]))
+            color_sat.append(row[1])
+
+        if (rowSel == 137):
+            print('Line %03d, colume %02d :  %s ' % (rowSel, 1, row[1]))
+            #resultStr.append(([row[9]]))
+            color_delta_c_mean_corr.append(row[1])
+
+        if (rowSel == 139):
+            print('Line %03d, colume %02d :  %s ' % (rowSel, 1, row[1]))
+            #resultStr.append(([row[9]]))
+            color_delta_c_max_corr.append(row[1])
+
+        if (rowSel == 140):
+            print('Line %03d, colume %02d :  %s ' % (rowSel, 1, row[1]))
+            #resultStr.append(([row[9]]))
+            color_delta_c_min_uncorr.append(row[1])
+
+        if (rowSel == 142):
+            print('Line %03d, colume %02d :  %s ' % (rowSel, 1, row[1]))
+            #resultStr.append(([row[9]]))
+            color_delta_c_max_uncorr.append(row[1])
+
+        if (rowSel == 143):
+            print('Line %03d, colume %02d :  %s ' % (rowSel, 1, row[1]))
+            #resultStr.append(([row[9]]))
+            color_delta_e_min_uncorr.append(row[1])
+
+        if (rowSel == 145):
+            print('Line %03d, colume %02d :  %s ' % (rowSel, 1, row[1]))
+            #resultStr.append(([row[9]]))
+            color_delta_e_max_uncorr.append(row[1])
+
+        rowSel = rowSel + 1
+        # print(row)
+
+    resultStr.append(awb_err)
+    resultStr.append(SNR_result)
+    resultStr.append(exposure_err)
+    resultStr.append(noise_result)
+    resultStr.append(color_sat)
+    resultStr.append(color_delta_c_mean_corr)
+    resultStr.append(color_delta_c_max_corr)
+    resultStr.append(color_delta_c_min_uncorr)
+    resultStr.append(color_delta_e_max_uncorr)
+    resultStr.append(color_delta_e_min_uncorr)
+    resultStr.append(color_delta_e_max_uncorr)
+
+
+with open(r'C:\Users\linchao\.spyder\Normal-Cap-SNR\result.csv', mode='w', newline='') as fdWriteCSV:
+    writer = csv.writer(fdWriteCSV)
+    writer.writerows(resultStr)

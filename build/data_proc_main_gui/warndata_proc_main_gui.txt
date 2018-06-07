@@ -1,0 +1,20 @@
+missing module named resource - imported by posix, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py
+missing module named posix - imported by os, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py
+missing module named _posixsubprocess - imported by subprocess, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py
+missing module named 'org.python' - imported by pickle, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py, xml.sax
+missing module named readline - imported by cmd, code, pdb, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py
+excluded module named _frozen_importlib - imported by importlib, importlib.abc, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py
+missing module named _frozen_importlib_external - imported by importlib._bootstrap, importlib, importlib.abc, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py
+missing module named _winreg - imported by platform, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py
+missing module named _scproxy - imported by urllib.request
+missing module named java - imported by platform, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py
+missing module named 'java.lang' - imported by platform, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py, xml.sax._exceptions
+missing module named vms_lib - imported by platform, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py
+missing module named termios - imported by tty, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py, getpass
+missing module named grp - imported by shutil, tarfile, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py
+missing module named org - imported by copy, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py
+missing module named pwd - imported by posixpath, shutil, tarfile, http.server, webbrowser, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py, netrc, getpass
+missing module named ce - imported by os, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py
+missing module named _dummy_threading - imported by dummy_threading, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py
+missing module named ttk - imported by main_gui_support, show_result_dialog_gui, result_dialog_gui_support, data_proc_main_gui, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py
+missing module named Tkinter - imported by main_gui_support, show_result_dialog_gui, result_dialog_gui_support, data_proc_main_gui, D:\Leo-Camera-Software\common-useful\Python-Learn\PycharmProjects\Tensorflow-Helloworld\data_proc_main_gui.py
