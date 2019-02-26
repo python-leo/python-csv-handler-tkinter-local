@@ -10,8 +10,7 @@ a simple python program, used to process specific csv files. Use tkinter to impl
 （2）csv文件写入，使用writerows与writerow是有差异的，注意传入参数类型的差别。
      如果使用writerows，需要构造list[list]参数。根据需要使用append或者extend。
      当前我使用穷举所需Item的方式，为每个Item定义了一个List变量，全部都使用了append。
-（3）写csv文件的时候，根据需要定制自己的文件内容格式，如添加项目栏名称，将数据输出到一行或者
-     一列，不同项目数据之间用空行隔开。
+（3）写csv文件的时候，根据需要定制自己的文件内容格式，如添加项目栏名称，将数据输出到一行或者一列，不同项目数据之间用空行隔开。
 （4）实际项目过程中，发现csv文件类似纯文本格式文件，无法控制行宽，列宽。只有按照其他方式，
      将数据写入到excel文件中时，才能指定格式（如列宽）。
 （5）float数据，按照指定位宽进行保存和输出。关于输出，可以继续看做字符串，类似"%.1f" % str 
