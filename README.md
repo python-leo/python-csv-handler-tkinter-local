@@ -6,10 +6,10 @@ a simple python program, used to process specific csv files. Use tkinter to impl
 下面是在实现程序中记录的一些问题点：
 
 （1）文件读取，如果使用with，要确保所写逻辑代码缩进正确，位于with语句块内。
-     如果使用with无法满足要求，改成open & close的普通类型。
+    如果使用with无法满足要求，改成open & close的普通类型。
 （2）csv文件写入，使用writerows与writerow是有差异的，注意传入参数类型的差别。
      如果使用writerows，需要构造list[list]参数。根据需要使用append或者extend。
-	 当前我使用穷举所需Item的方式，为每个Item定义了一个List变量，全部都使用了append。
+     当前我使用穷举所需Item的方式，为每个Item定义了一个List变量，全部都使用了append。
 （3）写csv文件的时候，根据需要定制自己的文件内容格式，如添加项目栏名称，将数据输出到一行或者
      一列，不同项目数据之间用空行隔开。
 （4）实际项目过程中，发现csv文件类似纯文本格式文件，无法控制行宽，列宽。只有按照其他方式，
